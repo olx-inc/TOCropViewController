@@ -201,11 +201,11 @@
 		223424611ABBC0CC00BBC2B1 = {
 			isa = PBXGroup;
 			children = (
+				144B8CCA1D22CAFF0085D774 /* TOCropViewController */,
+				22EE5E211E65554C00A92D8D /* CropViewController */,
 				22EE5E271E65568800A92D8D /* CropViewControllerExample */,
 				2234246C1ABBC0CD00BBC2B1 /* TOCropViewControllerExample */,
 				220611981B2E6777001A467B /* TOCropViewControllerTests */,
-				22EE5E211E65554C00A92D8D /* CropViewController */,
-				144B8CCA1D22CAFF0085D774 /* TOCropViewController */,
 				2234246B1ABBC0CD00BBC2B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -930,6 +930,7 @@
 				22EE5E371E65568800A92D8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

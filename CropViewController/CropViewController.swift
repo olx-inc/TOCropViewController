@@ -35,7 +35,7 @@ public enum CropViewControllerAspectRatioPreset {
     case custom = TOCropViewControllerAspectRatioPresetCustom
 }
 
-public protocol CropViewControllerDelegate: class {
+@objc public protocol CropViewControllerDelegate: class {
     func cropViewController(_ cropViewController: CropViewController, didCropToRect: CGRect, angle: Int)
     func cropViewController(_ cropviewController: CropViewController, didCropToImage: UIImage, rect: CGRect, angle: Int)
     func cropViewController(_ cropViewController: CropViewController, didCropToCircularImage: UIImage, rect: CGRect, angle: Int)
@@ -46,7 +46,7 @@ public final class CropViewController: TOCropViewController, TOCropViewControlle
 
     fileprivate var delegateProxy: CropViewControllerDelegate?
 
-    open override weak var delegate: CropViewControllerDelegate? {
+    @objc open weak var delegate: CropViewControllerDelegate? {
         set {
             super.delegate = self
             self.delegateProxy = newValue
